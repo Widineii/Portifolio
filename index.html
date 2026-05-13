@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="description" content="Desenvolvedor Full Stack Java em Belo Horizonte. Crio sistemas desktop, sistemas web, APIs e sites profissionais com Java, Spring Boot, Node.js e bancos de dados." />
+  <meta name="keywords" content="desenvolvedor java, full stack, sistema desktop, sistema web, spring boot, freelancer belo horizonte, sistema gestão, software empresa" />
+  <meta name="author" content="Widinei Martins de Oliveira" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Widinei Martins | Desenvolvedor Full Stack Java" />
+  <meta property="og:description" content="Sistemas Desktop, Sistemas Web, APIs e Sites profissionais com Java, Spring Boot e Node.js." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://widineii.github.io/Portifolio/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Widinei Martins | Desenvolvedor Full Stack Java" />
+  <meta name="twitter:description" content="Sistemas Desktop, Web e APIs com Java + Spring Boot." />
+
+  <title>Widinei Martins | Desenvolvedor Full Stack Java - Sistemas Desktop e Web</title>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Widinei Martins de Oliveira",
+    "jobTitle": "Desenvolvedor Full Stack Java",
+    "description": "Desenvolvedor especialista em sistemas desktop, sistemas web e APIs com Java, Spring Boot e Node.js.",
+    "url": "https://widineii.github.io/Portifolio/",
+    "email": "widineimartins4@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "knowsAbout": ["Java", "Spring Boot", "JavaScript", "Node.js", "PostgreSQL", "MySQL", "SQLite", "JPA", "JWT", "REST API"]
+  }
+  </script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-dot"></span>
+        Widinei Martins
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#precos">Preços</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="btn-nav">Contato</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            Disponível para novos projetos
+          </div>
+          <h1>
+            Desenvolvedor <span class="gradient-text">Full Stack Java</span>
+            em Belo Horizonte.
+          </h1>
+          <p class="hero-sub">
+            Crio <strong>sistemas desktop</strong>, <strong>sistemas web</strong>, <strong>APIs</strong> e
+            <strong>sites profissionais</strong> sob medida para o seu negócio.
+            Especializado em Java, Spring Boot, Node.js e bancos de dados relacionais.
+          </p>
+          <div class="hero-cta">
+            <a href="#contato" class="btn-primary">
+              Solicitar orçamento
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#portfolio" class="btn-secondary">Ver projetos</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <div class="trust-avatar grad-java">☕</div>
+              <div class="trust-avatar grad-spring">🍃</div>
+              <div class="trust-avatar grad-js">JS</div>
+              <div class="trust-avatar grad-db">DB</div>
+            </div>
+            <div>
+              <div class="trust-stars">★★★★★</div>
+              <p>Java · Spring Boot · Node.js · SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-mockup">
+            <div class="mockup-browser">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-url">localhost:8080</div>
+              </div>
+              <div class="browser-content">
+                <div class="code-block">
+                  <div class="code-line"><span class="code-key">@RestController</span></div>
+                  <div class="code-line"><span class="code-key">public class</span> <span class="code-class">ApiController</span> {</div>
+                  <div class="code-line indent"><span class="code-key">@GetMapping</span>(<span class="code-string">"/api"</span>)</div>
+                  <div class="code-line indent"><span class="code-key">public</span> <span class="code-class">Response</span> <span class="code-fn">build</span>() {</div>
+                  <div class="code-line indent2"><span class="code-key">return new</span> <span class="code-class">Success</span>();</div>
+                  <div class="code-line indent">}</div>
+                  <div class="code-line">}</div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-card card-1">
+              <div class="floating-icon">⚡</div>
+              <div>
+                <strong>API REST</strong>
+                <span>Spring Boot + JPA</span>
+              </div>
+            </div>
+            <div class="floating-card card-2">
+              <div class="floating-icon">🗄️</div>
+              <div>
+                <strong>PostgreSQL</strong>
+                <span>MySQL · SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>6</strong>
+          <span>Projetos no GitHub</span>
+        </div>
+        <div class="stat">
+          <strong>2</strong>
+          <span>Anos com Java</span>
+        </div>
+        <div class="stat">
+          <strong>4</strong>
+          <span>Bancos de dados</span>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>Código no GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que eu faço</span>
+        <h2>Soluções completas pro seu negócio</h2>
+        <p>Desenvolvo software sob medida para empresas, comércios e profissionais.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon icon-1">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>Sistemas Desktop</h3>
+          <p>Softwares para gestão local com Java Swing: PDV, controle de estoque, agendamento, financeiro e mais.</p>
+          <div class="service-tech">
+            <span>Java Swing</span>
+            <span>SQLite</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon icon-2">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Sistemas Web</h3>
+          <p>Aplicações web completas com login, dashboard, banco de dados e painel administrativo.</p>
+          <div class="service-tech">
+            <span>Spring Boot</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon icon-3">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+          </div>
+          <h3>APIs REST</h3>
+          <p>APIs robustas com autenticação JWT, documentação Swagger e integração com qualquer front-end ou app.</p>
+          <div class="service-tech">
+            <span>REST</span>
+            <span>JWT</span>
+            <span>JPA</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon icon-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Sites e Landing Pages</h3>
+          <p>Sites institucionais, landing pages e portfolios responsivos com HTML, CSS e JavaScript modernos.</p>
+          <div class="service-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon icon-5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Banco de Dados</h3>
+          <p>Modelagem, criação e otimização de bancos de dados. Migrações, consultas SQL e relatórios avançados.</p>
+          <div class="service-tech">
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon icon-6">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11H5a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2h-4M12 2v13M8 6l4-4 4 4"/></svg>
+          </div>
+          <h3>Manutenção e Suporte</h3>
+          <p>Manutenção de sistemas existentes, correção de bugs, novas features e melhorias de performance.</p>
+          <div class="service-tech">
+            <span>Bugfix</span>
+            <span>Refactor</span>
+            <span>Deploy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="section section-alt" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projetos reais</span>
+        <h2>Portfólio de desenvolvimento</h2>
+        <p>Todos os projetos abaixo estão com o código aberto no meu GitHub. Você pode conferir!</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-saldox">
+            <div class="proj-icon">📊</div>
+            <span class="portfolio-category">Sistema Web</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>SaldoX</h3>
+            <p>Dashboard financeiro web com autenticação JWT, controle de receitas e despesas, e interface responsiva.</p>
+            <div class="portfolio-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>JWT</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="https://github.com/Widineii/SaldoX" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-farmacia">
+            <div class="proj-icon">💊</div>
+            <span class="portfolio-category">Sistema Desktop</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>Sistema de Farmácia</h3>
+            <p>Sistema desktop completo para farmácia com PDV, controle de estoque, geração de relatórios em XML e gestão de produtos.</p>
+            <div class="portfolio-tags">
+              <span>Java Swing</span>
+              <span>SQLite</span>
+              <span>XML</span>
+              <span>PDV</span>
+            </div>
+            <a href="https://github.com/Widineii/Sistema-de-Farmacia" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-bank">
+            <div class="proj-icon">🏦</div>
+            <span class="portfolio-category">Sistema Web</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>Nextt Bank</h3>
+            <p>Sistema bancário web demonstrativo com dashboard de operações financeiras, transferências e painel administrativo completo.</p>
+            <div class="portfolio-tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Dashboard</span>
+              <span>Admin</span>
+            </div>
+            <a href="https://github.com/Widineii/Nextt-bank" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-clinica">
+            <div class="proj-icon">🩺</div>
+            <span class="portfolio-category">Sistema de Gestão</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>Agenda de Clínica</h3>
+            <p>Sistema de agendamento para clínica com 15 profissionais e 4 salas. Controle de horários, prevenção de conflitos e gestão completa de consultas.</p>
+            <div class="portfolio-tags">
+              <span>Java</span>
+              <span>Agendamento</span>
+              <span>Multi-usuário</span>
+            </div>
+            <a href="https://github.com/Widineii/clinica-agenda" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-media">
+            <div class="proj-icon">🎬</div>
+            <span class="portfolio-category">Catálogo Web</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>Mediaflow</h3>
+            <p>Plataforma de catálogo com preços de jogos, filmes, séries, livros e muito mais. Site dinâmico com busca e categorias.</p>
+            <div class="portfolio-tags">
+              <span>JavaScript</span>
+              <span>Catálogo</span>
+              <span>Multi-mídia</span>
+            </div>
+            <a href="https://github.com/Widineii/Mediaflow" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-mockup proj-mercado">
+            <div class="proj-icon">🛒</div>
+            <span class="portfolio-category">Sistema PDV</span>
+          </div>
+          <div class="portfolio-content">
+            <h3>Mercado do Tonico</h3>
+            <p>Sistema completo de vendas para mercado com gestão de produtos, controle de estoque, frente de caixa e fechamento.</p>
+            <div class="portfolio-tags">
+              <span>Java</span>
+              <span>PDV</span>
+              <span>Estoque</span>
+              <span>Vendas</span>
+            </div>
+            <a href="https://github.com/Widineii/mercado-do-tonico" target="_blank" rel="noopener" class="portfolio-link">
+              Ver no GitHub
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l10-10M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="portfolio-cta">
+        <a href="https://github.com/Widineii" target="_blank" rel="noopener" class="btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          Ver todos no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tecnologias</span>
+        <h2>Stack que eu <span class="gradient-text">domino</span></h2>
+        <p>Ferramentas que uso no dia a dia para construir sistemas profissionais.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <div class="stack-icon">☕</div>
+          <strong>Java</strong>
+          <span>POO · Swing</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🍃</div>
+          <strong>Spring Boot</strong>
+          <span>API · JPA</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🟨</div>
+          <strong>JavaScript</strong>
+          <span>Frontend</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🟩</div>
+          <strong>Node.js</strong>
+          <span>Backend</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🐘</div>
+          <strong>PostgreSQL</strong>
+          <span>Banco SQL</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🐬</div>
+          <strong>MySQL</strong>
+          <span>Banco SQL</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">📦</div>
+          <strong>SQLite</strong>
+          <span>Banco local</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🔐</div>
+          <strong>JWT</strong>
+          <span>Autenticação</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">🌐</div>
+          <strong>HTML/CSS</strong>
+          <span>Web</span>
+        </div>
+        <div class="stack-item">
+          <div class="stack-icon">📁</div>
+          <strong>Git</strong>
+          <span>Versionamento</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREÇOS -->
+  <section class="section section-alt" id="precos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pacotes</span>
+        <h2>Investimento para o seu <span class="gradient-text">projeto</span></h2>
+        <p>Valores transparentes para os principais tipos de serviço. Projetos personalizados sob consulta.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Site / Landing Page</h3>
+            <p>Site institucional ou portfólio</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-from">a partir de</span>
+            <div>
+              <span class="price-currency">R$</span>
+              <span class="price-value">597</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Design moderno e responsivo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Até 5 seções (sobre, serviços, etc.)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Formulário de contato</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Integração com WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Otimizado para SEO</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Deploy + 15 dias de suporte</li>
+          </ul>
+          <a href="#contato" class="btn-secondary btn-full">Quero esse plano</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Mais Popular</div>
+          <div class="pricing-header">
+            <h3>Sistema Desktop</h3>
+            <p>Software de gestão para empresa</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-from">a partir de</span>
+            <div>
+              <span class="price-currency">R$</span>
+              <span class="price-value">1.497</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Sistema completo em Java</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Banco de dados configurado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Tela de login + permissões</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Cadastros e relatórios</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Exportação em PDF/XML</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Instalador (.exe ou .jar)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Treinamento por vídeo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 30 dias de suporte</li>
+          </ul>
+          <a href="#contato" class="btn-primary btn-full">Quero esse plano</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Sistema Web</h3>
+            <p>Sistema online com login</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-from">a partir de</span>
+            <div>
+              <span class="price-currency">R$</span>
+              <span class="price-value">2.497</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Sistema Web (Spring Boot)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Login com JWT</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Dashboard + painel admin</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> API REST documentada</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Banco PostgreSQL/MySQL</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Deploy em hospedagem</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Manual de uso</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> 30 dias de suporte</li>
+          </ul>
+          <a href="#contato" class="btn-secondary btn-full">Quero esse plano</a>
+        </div>
+
+      </div>
+      <p class="pricing-note">
+        💡 Todos os valores são <strong>a partir de</strong> — o preço final depende do escopo. Pagamento em 50% início + 50% entrega. Parcelamento em até 2x. <a href="#contato">Solicite um orçamento detalhado</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="section" id="processo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Como trabalho</span>
+        <h2>Processo claro em <span class="gradient-text">4 etapas</span></h2>
+        <p>Do briefing à entrega final, você acompanha cada passo do projeto.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="process-number">01</div>
+          <div class="process-icon">💬</div>
+          <h3>Briefing</h3>
+          <p>Conversamos sobre o que você precisa, funcionalidades, prazo e referências. Tudo pelo WhatsApp.</p>
+          <div class="process-time">1 dia</div>
+        </div>
+        <div class="process-step">
+          <div class="process-number">02</div>
+          <div class="process-icon">📋</div>
+          <h3>Proposta</h3>
+          <p>Envio uma proposta detalhada com escopo, prazo e valor. Após aprovação, começo o projeto.</p>
+          <div class="process-time">1-2 dias</div>
+        </div>
+        <div class="process-step">
+          <div class="process-number">03</div>
+          <div class="process-icon">⚙️</div>
+          <h3>Desenvolvimento</h3>
+          <p>Desenvolvo o sistema com entregas parciais. Você acompanha o progresso em tempo real.</p>
+          <div class="process-time">5-30 dias</div>
+        </div>
+        <div class="process-step">
+          <div class="process-number">04</div>
+          <div class="process-icon">🚀</div>
+          <h3>Entrega</h3>
+          <p>Entrego o sistema funcionando, com manual de uso e suporte gratuito para qualquer dúvida.</p>
+          <div class="process-time">1 dia</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section-alt" id="sobre">
+    <div class="container about-grid">
+      <div class="about-image">
+        <div class="about-image-wrap">
+          <div class="about-emoji">👨‍💻</div>
+        </div>
+        <div class="about-badge">
+          <strong>BH · MG</strong>
+          <span>Belo Horizonte</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Sobre mim</span>
+        <h2>Transformo ideias em <span class="gradient-text">software de verdade</span></h2>
+        <p>
+          Sou <strong>Widinei Martins de Oliveira</strong>, estudante de Ciência da Computação
+          e desenvolvedor Full Stack com foco em Back-End. Moro em <strong>Belo Horizonte - MG</strong>
+          e trabalho remoto com clientes de todo o Brasil.
+        </p>
+        <p>
+          Tenho experiência com <strong>Java, Spring Boot, Node.js, PostgreSQL, MySQL e SQLite</strong>.
+          Já desenvolvi sistemas de gestão para farmácia, mercado, clínica, sistema bancário,
+          dashboards financeiros e plataformas web — todos com código aberto no meu GitHub.
+        </p>
+        <ul class="about-features">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Código limpo e documentado</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Entrega no prazo combinado</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Comunicação rápida pelo WhatsApp</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg> Suporte e manutenção após entrega</li>
+        </ul>
+        <a href="https://github.com/Widineii" target="_blank" rel="noopener" class="btn-secondary" style="margin-top: 24px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          Ver meu GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dúvidas frequentes</span>
+        <h2>Perguntas que já me fizeram</h2>
+        <p>Antes de fechar, esclareço as principais dúvidas dos clientes.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            Em quanto tempo meu sistema fica pronto?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Depende do escopo. Sites e landing pages ficam prontos em 3-7 dias. Sistemas desktop simples em 10-20 dias. Sistemas web mais complexos em 20-45 dias. Te passo o prazo exato na proposta após o briefing.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            Como funciona o pagamento?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Trabalho com 50% no início (sinal) e 50% na entrega. Aceito Pix, transferência bancária e cartão de crédito (com parcelamento em até 2x). O contrato detalha tudo antes de começar o projeto.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            O código do sistema é meu ou seu?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>O código é 100% seu após o pagamento final. Entrego todos os arquivos-fonte, banco de dados, documentação e instruções para você (ou outro dev) dar manutenção no futuro.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            Você dá suporte depois da entrega?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sim! Todos os planos incluem de 15 a 30 dias de suporte gratuito para bugs e dúvidas. Depois disso, ofereço plano de manutenção mensal ou cobranças pontuais conforme a demanda.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            Posso ver seu trabalho antes de fechar?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Claro! Todos os meus projetos estão com código aberto no <a href="https://github.com/Widineii" target="_blank" rel="noopener" style="color: var(--accent-1);">GitHub</a>. Você pode conferir antes de fechar comigo. Durante o desenvolvimento, faço entregas parciais pra você acompanhar.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            Você faz manutenção em sistemas já existentes?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sim! Faço manutenção, correção de bugs, adição de funcionalidades e melhorias de performance em sistemas existentes, principalmente em Java, Spring Boot e Node.js. Me envia o código pra eu avaliar e te passar o orçamento.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            Você precisa de hospedagem? Quanto custa?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sites estáticos hospedo de graça (Netlify/Vercel). Sistemas web precisam de hospedagem com banco de dados (custa em torno de R$ 25-60/mês). Sistemas desktop não precisam de hospedagem — rodam no computador do cliente.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            E se eu não souber explicar exatamente o que quero?
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <p>Sem problema! Na conversa inicial eu te ajudo a definir tudo. Pergunto sobre o seu negócio, suas dores, suas necessidades, e juntos chegamos no escopo ideal. A primeira conversa é sempre gratuita.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section-alt" id="contato">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Vamos conversar</span>
+          <h2>Pronto pra desenvolver o seu <span class="gradient-text">próximo projeto?</span></h2>
+          <p>Me chama no WhatsApp ou preenche o formulário ao lado. Respondo rápido e a primeira conversa é sempre gratuita.</p>
+
+          <div class="contact-methods">
+            <a href="https://wa.me/55370998550994?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." class="contact-method" target="_blank" rel="noopener">
+              <div class="contact-icon whatsapp-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Resposta em até 1 hora</span>
+              </div>
+            </a>
+
+            <a href="mailto:widineimartins4@gmail.com?subject=Or%C3%A7amento%20de%20Projeto" class="contact-method">
+              <div class="contact-icon email-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+              </div>
+              <div>
+                <strong>E-mail</strong>
+                <span>widineimartins4@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/Widineii" class="contact-method" target="_blank" rel="noopener">
+              <div class="contact-icon github-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>@Widineii</span>
+              </div>
+            </a>
+
+            <div class="contact-method static">
+              <div class="contact-icon location-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Localização</strong>
+                <span>Belo Horizonte - MG (remoto)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="return false;">
+          <h3>Solicite um orçamento</h3>
+          <p class="form-intro">Preencha os dados e clica em enviar. Vai abrir o WhatsApp com sua mensagem já formatada.</p>
+
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="João da Silva" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required placeholder="joao@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="telefone">WhatsApp</label>
+              <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo">Tipo de projeto</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecione...</option>
+              <option value="site">Site / Landing Page</option>
+              <option value="sistema-desktop">Sistema Desktop (Java)</option>
+              <option value="sistema-web">Sistema Web (Spring Boot / Node)</option>
+              <option value="api">API REST</option>
+              <option value="manutencao">Manutenção em sistema existente</option>
+              <option value="outro">Outro / Não sei dizer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="orcamento">Orçamento estimado</label>
+            <select id="orcamento" name="orcamento">
+              <option value="">Selecione...</option>
+              <option value="ate-1000">Até R$ 1.000</option>
+              <option value="1000-2500">R$ 1.000 a R$ 2.500</option>
+              <option value="2500-5000">R$ 2.500 a R$ 5.000</option>
+              <option value="acima-5000">Acima de R$ 5.000</option>
+              <option value="nao-sei">Não sei dizer ainda</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Conte sobre seu projeto</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Descreva o que você precisa: funcionalidades, prazo, referências..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+
+          <p class="form-note">Vai abrir o WhatsApp com sua mensagem pronta. Você só confirma o envio.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-dot"></span>
+          Widinei Martins
+        </a>
+        <p>Desenvolvedor Full Stack Java em Belo Horizonte. Sistemas desktop, web, APIs e sites profissionais.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/55370998550994" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+          </a>
+          <a href="https://github.com/Widineii" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:widineimartins4@gmail.com" aria-label="E-mail">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Serviços</h4>
+        <a href="#servicos">Sistemas Desktop</a>
+        <a href="#servicos">Sistemas Web</a>
+        <a href="#servicos">APIs REST</a>
+        <a href="#servicos">Sites</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contato</h4>
+        <a href="https://wa.me/55370998550994" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:widineimartins4@gmail.com">E-mail</a>
+        <a href="https://github.com/Widineii" target="_blank" rel="noopener">GitHub</a>
+        <a href="#contato">Solicitar orçamento</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Widinei Martins de Oliveira. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/55370998550994?text=Ol%C3%A1!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
