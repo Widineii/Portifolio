@@ -128,7 +128,7 @@
 
   const form = document.getElementById('contactForm');
   if (form) {
-    const WHATSAPP_NUMBER = '55370998550994';
+    const WHATSAPP_NUMBER = '5537998550994';
 
     const tipoLabels = {
       'site': 'Site / Landing Page',

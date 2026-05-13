@@ -1298,7 +1298,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .email-icon { background: var(--gradient-primary); }
 .clock-icon { background: linear-gradient(135deg, #f59e0b, #ef4444); }
 .github-icon { background: linear-gradient(135deg, #24292e, #1a1e22); }
+.linkedin-icon { background: linear-gradient(135deg, #0077b5, #00569e); }
 .location-icon { background: linear-gradient(135deg, #ec4899, #db2777); }
+
+/* Botões de ação no Sobre */
+.about-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.about-actions .btn-secondary {
+  padding: 12px 22px;
+  font-size: 0.95rem;
+}
 .contact-method strong {
   display: block;
   font-size: 1rem;
