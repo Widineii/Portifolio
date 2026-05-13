@@ -766,6 +766,27 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: none;
 }
 
+.portfolio-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.portfolio-actions .portfolio-link {
+  margin-top: 0;
+  padding: 9px 16px;
+  font-size: 0.85rem;
+}
+.portfolio-link-demo {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  color: white;
+}
+.portfolio-link-demo:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
 /* Botão "Ver todos no GitHub" no final */
 .portfolio-cta {
   text-align: center;
@@ -1188,6 +1209,65 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 4px;
   border-radius: var(--radius-sm);
   flex-shrink: 0;
+}
+
+.education-card {
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.education-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  opacity: 0.05;
+  pointer-events: none;
+}
+.education-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+}
+.education-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.education-info { position: relative; z-index: 1; }
+.education-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-blue);
+  margin-bottom: 6px;
+}
+.education-info h4 {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+  color: var(--text-primary);
+}
+.education-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* ============================================
