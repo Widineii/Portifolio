@@ -659,7 +659,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .portfolio-mockup {
-  height: 220px;
+  height: 260px;
   position: relative;
   display: flex;
   align-items: center;
